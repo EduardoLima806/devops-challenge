@@ -1,0 +1,25 @@
+aws_region  = "us-east-1"
+app_name    = "devops-challenge"
+environment = "dev"
+app_version = "1.0.0"
+
+# VPC Configuration
+vpc_cidr            = "10.0.0.0/16"
+availability_zones  = ["us-east-1a", "us-east-1b"]
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.11.0/24", "10.0.12.0/24"]
+
+# ECS Configuration
+container_port = 8080
+desired_count  = 2
+cpu            = 512
+memory         = 1024
+
+# Monitoring Configuration
+alarm_email                  = ""  # Set your email for alarm notifications
+log_retention_days           = 7
+high_cpu_threshold           = 80
+high_memory_threshold        = 80
+alb_response_time_threshold  = 2.0
+alb_error_rate_threshold     = 5.0
+
