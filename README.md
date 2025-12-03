@@ -229,7 +229,7 @@ Ensure your AWS account has sufficient limits:
 ### Step 1: Clone and Prepare Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/EduardoLima806/devops-challenge
 cd devops-challenge
 ```
 
